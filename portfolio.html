@@ -412,7 +412,7 @@
           });
           var numItemsDisp = $('img.item:not(.isotope-hidden)').length;
           $filterDisplay.append( '<span class="filter-label data-counter pull-right">&nbsp;'+numItemsDisp+'&nbsp;Companies</span>' );
-          $filterDisplay.append( '<a onclick="clearAll();" id="reset-filters" class="btn btn-outline-warning pull-right filter-btn">Clear All</a>' );
+          $filterDisplay.append( '<a onclick="clearAll();" id="reset-filters" class="btn btn-outline-warning pull-right filter-btn">Clear Filters</a>' );
           var group = '';
       // filter on click
       $('.filter a').click(function(){
@@ -594,27 +594,27 @@ if ( comboFilter.indexOf('funds') == -1
       if(numItemsHidden != 0 && numItemsDisp != 1) {
         // clear filter
         $filterDisplay.append( '<span class="filter-label data-counter pull-right">Displaying:&nbsp;'+numItemsDisp+'&nbsp;Companies</span>' );
-        $filterDisplay.append( '<a onclick="clearAll();" id="reset-filters" class="btn btn-outline-warning pull-right filter-btn">Clear All</a>' );
+        $filterDisplay.append( '<a onclick="clearAll();" id="reset-filters" class="btn btn-outline-warning pull-right filter-btn">Clear Filters</a>' );
       }
       else if (numItemsHidden != 0 && numItemsDisp === 1) {
 
         $filterDisplay.append( '<span class="filter-label data-counter pull-right">Displaying:&nbsp;'+numItemsDisp+'&nbsp;Portco</span>' );
-        $filterDisplay.append( '<a onclick="clearAll();" id="reset-filters" class="btn btn-outline-warning pull-right filter-btn">Clear All</a>' );
+        $filterDisplay.append( '<a onclick="clearAll();" id="reset-filters" class="btn btn-outline-warning pull-right filter-btn">Clear Filters</a>' );
       }
       else if (numItemsHidden === 0 && activeCheck > 0) {
         $filterDisplay.append( '<span class="filter-label data-counter pull-right">Displaying:&nbsp;'+numItemsDisp+'&nbsp;Companies</span>' );
-        $filterDisplay.append( '<a onclick="clearAll();" id="reset-filters" class="btn btn-outline-warning pull-right filter-btn">Clear All</a>' );
+        $filterDisplay.append( '<a onclick="clearAll();" id="reset-filters" class="btn btn-outline-warning pull-right filter-btn">Clear Filters</a>' );
 
       }
       else if (numItemsHidden === 0 && activeCheck === 0) {
         $filterDisplay.append( '<span class="filter-label data-counter pull-right">Displaying:&nbsp;'+numItemsDisp+'&nbsp;Companies</span>' );
-        $filterDisplay.append( '<a onclick="clearAll();" id="reset-filters" class="btn btn-outline-warning pull-right filter-btn">Clear All</a>' );
+        $filterDisplay.append( '<a onclick="clearAll();" id="reset-filters" class="btn btn-outline-warning pull-right filter-btn">Clear Filters</a>' );
 
       }
       else{ // strictly fall-back - this should never get triggered 
 
         $filterDisplay.append( '<span class="filter-label data-counter pull-right">Displaying:&nbsp;'+numItemsDisp+'&nbsp;Companies</span>' );
-        $filterDisplay.append( '<a onclick="clearAll();" id="reset-filters" class="btn btn-outline-warning pull-right filter-btn">Clear All</a>' );
+        $filterDisplay.append( '<a onclick="clearAll();" id="reset-filters" class="btn btn-outline-warning pull-right filter-btn">Clear Filters</a>' );
       }
     });
 });
@@ -652,7 +652,7 @@ function getComboFilter( filters ) {
     $('#filter-display').empty();
     var numItemsDisp = $('img.item:not(.isotope-hidden)').length;
     $('#filter-display').append( '<span class="filter-label data-counter pull-right">&nbsp;'+numItemsDisp+'&nbsp;Companies</span>' );
-    $('#filter-display').append( '<a onclick="clearAll();" id="reset-filters" class="btn btn-outline-warning pull-right filter-btn">Clear All</a>' );
+    $('#filter-display').append( '<a onclick="clearAll();" id="reset-filters" class="btn btn-outline-warning pull-right filter-btn">Clear Filters</a>' );
   }
 </script>
 
