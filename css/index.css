@@ -37,6 +37,9 @@ font-family: 'Oxygen', sans-serif;
     font-size: 7vw;
     color: #e66432;
 }
+section {
+  padding-top: 80px;
+}
 
 .sectionTitle{
   display: inline;
