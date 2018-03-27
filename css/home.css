@@ -114,13 +114,37 @@ canvas {
   width: 200px;
 }
 
+.team-link:hover {
+    opacity: 0.5
+
+}
+
+.team-link {
+    position: relative;
+    display: inline-block;
+}
+
+
+.team-link:hover .external_link {
+    display: block;
+}
+ 
+.external_link {
+    position: absolute;
+    right: 40%;
+    top: 35%;
+    display: none;
+}
+
+.external_link{
+    font-size: 40px;
+    color: #e66432;
+}
+
 .advisors-item img{
   height: 150px;
   width: 150px;
 }
-
-
-
 
 .icon-twitter {
   color: #55ACEE;

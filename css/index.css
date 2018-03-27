@@ -52,6 +52,11 @@ section {
   margin-top: 32px !important;
 }
 
+.font-weight-bold_2{
+	font-weight: bold;
+}
+
+
 .color_two{
     color: #8f0014;
 }
@@ -59,6 +64,17 @@ section {
 .home_icon{
 	font-size: 3rem;
 }
+
+.modal-dialog,
+.modal-content {
+    height: 80%;
+}
+
+.modal-body {
+    overflow-y: scroll;
+}
+
+
 
 @media (min-width: 992px) { 
 	.fa-2x{
