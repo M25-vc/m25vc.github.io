@@ -102,7 +102,7 @@ function getTeamDetails(team) {
 
 	return `<div class="col-xl-4 col-lg-4 col-md-4 col-sm-6 text-center team-item">
           <a href="#${team.current}" class="team-link" data-toggle="modal" data-target="#${team.current}">
-            <img src="${team.img}" class="rounded-circle" alt="">
+            <img src="${team.img}" class="rounded-circle" alt="${team.name}">
               <div class="external_link"><i class="fa fa-external-link fa-1x"></i></div>
           </a>
 
@@ -167,7 +167,7 @@ var advisors = [
 function getAdvisorDetails(advisor) {
 	return `<div class="col-xl-3 col-lg-3 col-md-3 col-sm-6 text-center advisors-item">
             <a href="#${advisor.current}" class="advisors-link" data-toggle="modal" data-target="#${advisor.current}">
-              <img src="${advisor.img}" class="rounded-circle" alt="">
+              <img src="${advisor.img}" class="rounded-circle" alt="${advisor.name}">
             </a>
             <div class="advisors-caption">
               <h4>${advisor.name}</h4>
