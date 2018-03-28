@@ -8,7 +8,7 @@ $(function () {
 		if (response.status == 'ok') {
 			$.each(response.items, function (k, item) {
 				var visibleSm;
-				if(k < 1){
+				if(k < 2){
 					visibleSm = '';
 				} else {
 					visibleSm = ' visible-sm';
@@ -22,7 +22,7 @@ $(function () {
 				output += '<a class = "" href="'+ item.link + '"><img class="card-img-top" src="' + src + '" alt="Card image cap"><div class="card-block pt-2 px-1">';
 				output += '<h5 class="card-title">' +item.title + '</a></h5>';
 				output += '</div></div>';
-				return k < 1;
+				return k < 2;
 			});
 			$content.html(output);
 		}
