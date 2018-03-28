@@ -13,7 +13,7 @@ $(function () {
 				} else {
 					visibleSm = ' visible-sm';
 				}
-				output += '<div class="card" style="width: 20rem;">';
+				output += '<div class="card card-1" style="width: 20rem;">';
 				var tagIndex = item.description.indexOf('<img'); 
 				var srcIndex = item.description.substring(tagIndex).indexOf('src=') + tagIndex; 
 				var srcStart = srcIndex + 5; 
