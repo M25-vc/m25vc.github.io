@@ -381,12 +381,11 @@
 
           <p>INVESTORS: We only work with accredited investors that know one of the <a href="home#team">four board members</a>. Please reach out to one of them if you are interested in hearing more about our investment strategy/philosophy, portfolio companies, or future funds.</p>
         </div>
-          <script type="text/javascript">var submitted=false;</script>
-          <iframe name="hidden_iframe" id="hidden_iframe" style="display:none;" onload="if(submitted)  {$('#form_sub').show();}"></iframe>
-
+        <script type="text/javascript">
+          var submitted=false;
+        </script>
           <form action="https://docs.google.com/forms/d/e/1FAIpQLSdawaJdlvLNggNlDn68A5QZcfk5U-obfC2WN3VI--pPx4CGng/formResponse" method="post" target="hidden_iframe" 
           onsubmit="submitted=true;">
-
           <div class="form-row">
             <div class="form-group col-md-6">
               <label>Name*</label>
@@ -411,6 +410,9 @@
           <button id="submit_btn" type="submit" class="btn btn-m25">Submit</button>
           <p>* required</p>
         </form>
+
+        <iframe name="hidden_iframe" id="hidden_iframe" style="display:none;" onload="if(submitted)  {$('#form_sub').show();$('#submit_btn').hide();}"></iframe>
+
       </div>
       <div>
       </div>
