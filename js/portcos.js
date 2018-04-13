@@ -1,4 +1,5 @@
 var portfolio = [
+{url: "https://localcrate.com?ref=M25", class: "state_MN funds2 business_B2C industry_food" ,img: "LocalCrate"},
 {url: "https://www.steadymd.com/?ref=M25", class: "state_MO funds2 business_B2C industry_healthcare" ,img: "SteadyMD"},
 {url: "https://www.gosummersalt.com?ref=M25", class: "state_MO funds2 business_B2C industry_ecommerce" ,img: "Summersalt"},
 {url: "https://www.ensodata.io/?ref=M25", class: "state_WI funds2 business_B2B industry_healthcare" ,img: "EnsoData"},
