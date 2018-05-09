@@ -1,4 +1,5 @@
 var portfolio = [
+
 {url: "https://localcrate.com?ref=M25", class: "state_MN funds2 business_B2C industry_food" ,img: "LocalCrate"},
 {url: "https://www.steadymd.com/?ref=M25", class: "state_MO funds2 business_B2C industry_healthcare" ,img: "SteadyMD"},
 {url: "https://www.gosummersalt.com?ref=M25", class: "state_MO funds2 business_B2C industry_ecommerce" ,img: "Summersalt"},
@@ -26,7 +27,7 @@ var portfolio = [
 {url: "https://cheddargetter.com/?ref=M25", class: "state_IN funds2 business_B2B industry_finance  " ,img: "CheddarGetter"},
 {url: "http://opendorse.com/?ref=M25", class: "state_NE funds2 business_B2B industry_entertainment industry_marketing " ,img: "Opendorse"},
 {url: "http://www.completeset.com/?ref=M25", class: "state_KY  state_OH funds2 business_B2C industry_entertainment industry_apps " ,img: "CompleteSet"},
-{url: "http://www.rentalutions.com/?ref=M25", class: "state_IL funds2 business_B2B business_B2C industry_realestate  " ,img: "Rentalutions"},
+{url: "https://www.avail.co?ref=M25", class: "state_IL funds2 business_B2B business_B2C industry_realestate  " ,img: "Avail"},
 {url: "http://www.scriptdrop.co/?ref=M25", class: "state_OH funds2 business_B2B industry_healthcare  " ,img: "ScriptDrop"},
 {url: "https://andcostello.com/?ref=M25", class: "state_IN funds2 business_B2B  industry_enterprise " ,img: "Costello"},
 {url: "https://www.astronomer.io/?ref=M25", class: "state_OH funds2 business_B2B industry_analytics industry_enterprise " ,img: "Astronomer"},
