@@ -414,11 +414,15 @@
             <strong>Thank you!</strong> Your message was sent successfully.
           </div>
 
+          <div id="form_error" class="alert alert-warning" role="alert">
+            reCAPTCHA is mandatory.
+          </div>
+
           <button id="submit_btn" type="submit" class="btn btn-m25">Submit</button>
           <p>* required</p>
         </form>
 
-        <!-- <iframe name="hidden_iframe" id="hidden_iframe" style="display:none;" onload="if(submitted)  {$('#form_sub').show();$('#submit_btn').hide();}"></iframe> -->
+        <iframe name="hidden_iframe" id="hidden_iframe" style="display:none;" onload="if(submitted)  {$('#form_sub').show();$('#submit_btn').hide();}"></iframe>
     
         <script type="text/javascript">
           function checkForm() {
@@ -431,11 +435,14 @@
                 if( !$captcha.hasClass( "error" ) ){
                   $captcha.addClass( "error" );
                 }
+                $('#form_error').show();
+
               } else {
                 $( '.msg-error' ).text('');
                 $captcha.removeClass( "error" );
                 submitted=true;
                 $('#form_sub').show();
+                $('#form_error').hide();
                 $('#submit_btn').hide();
               }
             }
