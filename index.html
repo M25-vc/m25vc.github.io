@@ -418,7 +418,7 @@
           <p>* required</p>
         </form>
 
-        <iframe name="hidden_iframe" id="hidden_iframe" style="display:none;" onload="if(submitted)  {$('#form_sub').show();$('#submit_btn').hide();}"></iframe>
+        <!-- <iframe name="hidden_iframe" id="hidden_iframe" style="display:none;" onload="if(submitted)  {$('#form_sub').show();$('#submit_btn').hide();}"></iframe> -->
     
         <script type="text/javascript">
           function checkForm() {
@@ -434,8 +434,9 @@
               } else {
                 $( '.msg-error' ).text('');
                 $captcha.removeClass( "error" );
-                alert( 'reCAPTCHA marked' );
                 submitted=true;
+                $('#form_sub').show();
+                $('#submit_btn').hide();
               }
             }
           
