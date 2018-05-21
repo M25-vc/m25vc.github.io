@@ -419,8 +419,7 @@
         </form>
 
         <iframe name="hidden_iframe" id="hidden_iframe" style="display:none;" onload="if(submitted)  {$('#form_sub').show();$('#submit_btn').hide();}"></iframe>
-<!--         <iframe name="hidden_iframe" id="hidden_iframe" style="display:none;" onload="checkForm();"></iframe>
- -->       
+    
         <script type="text/javascript">
           function checkForm() {
               var $captcha = $( '#recaptcha' ),
@@ -438,7 +437,7 @@
                 alert( 'reCAPTCHA marked' );
                 submitted=true;
               }
-            })
+            }
           
         </script>
 
