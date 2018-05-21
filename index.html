@@ -417,7 +417,7 @@
           <p>* required</p>
         </form>
 
-        <iframe name="hidden_iframe" id="hidden_iframe" style="display:none;" onload="if($( '.g-recaptcha' )!= 0 && submitted)  {$('#form_sub').show();$('#submit_btn').hide();}"></iframe>
+        <iframe name="hidden_iframe" id="hidden_iframe" style="display:none;" onload="if($( '.g-recaptcha' ).getResponse().length != 0 && submitted)  {$('#form_sub').show();$('#submit_btn').hide();}"></iframe>
 
       </div>
     </section>
