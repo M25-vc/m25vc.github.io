@@ -387,7 +387,7 @@
           var submitted=false;
         </script>
           <form action="https://docs.google.com/forms/d/e/1FAIpQLSdawaJdlvLNggNlDn68A5QZcfk5U-obfC2WN3VI--pPx4CGng/formResponse" method="post" target="hidden_iframe" 
-          onsubmit="checkForm();">
+          onsubmit="submitted=true">
           <div class="form-row">
             <div class="form-group col-md-6">
               <label>Name*</label>
@@ -423,32 +423,6 @@
         </form>
 
         <iframe name="hidden_iframe" id="hidden_iframe" style="display:none;" onload="if(submitted)  {$('#form_sub').show();$('#submit_btn').hide();}"></iframe>
-    
-        <script type="text/javascript">
-          function checkForm() {
-              var $captcha = $( '#recaptcha' ),
-                  response = grecaptcha.getResponse();
-              console.log(response);
-
-              if (response.length === 0) {
-                $( '.msg-error').text( "reCAPTCHA is mandatory" );
-                if( !$captcha.hasClass( "error" ) ){
-                  $captcha.addClass( "error" );
-                }
-                $('#form_error').show();
-
-              } else {
-                $( '.msg-error' ).text('');
-                $captcha.removeClass( "error" );
-                submitted=true;
-                $('#form_sub').show();
-                $('#form_error').hide();
-                $('#submit_btn').hide();
-              }
-            }
-          
-        </script>
-
 
       </div>
     </section>
