@@ -1,5 +1,5 @@
 var portfolio = [
-{url: "https://www.leveragerx.com/?ref=M25", class: "state_NE funds2 business_B2C industry_healthcare industry_finance" ,img: "LeverageRx"},
+
 {url: "https://localcrate.com?ref=M25", class: "state_MN funds2 business_B2C industry_food" ,img: "LocalCrate"},
 {url: "https://www.steadymd.com/?ref=M25", class: "state_MO funds2 business_B2C industry_healthcare" ,img: "SteadyMD"},
 {url: "https://www.gosummersalt.com?ref=M25", class: "state_MO funds2 business_B2C industry_ecommerce" ,img: "Summersalt"},
