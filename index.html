@@ -387,7 +387,7 @@
           var submitted=false;
         </script>
           <form action="https://docs.google.com/forms/d/e/1FAIpQLSdawaJdlvLNggNlDn68A5QZcfk5U-obfC2WN3VI--pPx4CGng/formResponse" method="post" target="hidden_iframe" 
-          onsubmit="submitted=true;">
+          onsubmit="checkForm();">
           <div class="form-row">
             <div class="form-group col-md-6">
               <label>Name*</label>
@@ -406,8 +406,9 @@
             <label>Your Message</label>
             <textarea name="entry.2126718973" class="form-control" rows="3" placeholder=""/></textarea>
           </div>
+          <span class="msg-error error"></span>
 
-          <div class="g-recaptcha" data-sitekey="6LemeloUAAAAAFbCxWkUKRRslZiiMycxXE6cHAAv"></div>
+          <div id="recaptcha" class="g-recaptcha" data-sitekey="6LemeloUAAAAAFbCxWkUKRRslZiiMycxXE6cHAAv"></div>
 
           <div id="form_sub" class="alert alert-success" role="alert">
             <strong>Thank you!</strong> Your message was sent successfully.
@@ -417,7 +418,30 @@
           <p>* required</p>
         </form>
 
-        <iframe name="hidden_iframe" id="hidden_iframe" style="display:none;" onload="if({$( '.g-recaptcha' ).getResponse().length} != 0 && submitted)  {$('#form_sub').show();$('#submit_btn').hide();}"></iframe>
+        <iframe name="hidden_iframe" id="hidden_iframe" style="display:none;" onload="if(submitted)  {$('#form_sub').show();$('#submit_btn').hide();}"></iframe>
+<!--         <iframe name="hidden_iframe" id="hidden_iframe" style="display:none;" onload="checkForm();"></iframe>
+ -->       
+        <script type="text/javascript">
+          function checkForm() {
+              var $captcha = $( '#recaptcha' ),
+                  response = grecaptcha.getResponse();
+              console.log(response);
+
+              if (response.length === 0) {
+                $( '.msg-error').text( "reCAPTCHA is mandatory" );
+                if( !$captcha.hasClass( "error" ) ){
+                  $captcha.addClass( "error" );
+                }
+              } else {
+                $( '.msg-error' ).text('');
+                $captcha.removeClass( "error" );
+                alert( 'reCAPTCHA marked' );
+                submitted=true;
+              }
+            })
+          
+        </script>
+
 
       </div>
     </section>
