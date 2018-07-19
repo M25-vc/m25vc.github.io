@@ -1,4 +1,8 @@
 var portfolio = [
+{url: "https://winstonprivacy.com/?ref=M25", class: "state_IL funds2 business_B2C industry_other" ,img: "Winston"},
+{url: "https://bezl.io/?ref=M25", class: "state_OH funds2 business_B2B industry_ecommerce" ,img: "Bezlio"},
+{url: "https://loopreturns.com/?ref=M25", class: "state_OH funds2 business_B2C business_B2B industry_transportation" ,img: "Loop"},
+{url: "https://zohr.com/?ref=M25", class: "state_MO funds2 business_B2C business_B2B industry_transportation" ,img: "Zohr"},
 {url: "https://www.leveragerx.com/?ref=M25", class: "state_NE funds2 business_B2C industry_healthcare industry_finance" ,img: "LeverageRx"},
 {url: "https://localcrate.com?ref=M25", class: "state_MN funds2 business_B2C industry_food" ,img: "LocalCrate"},
 {url: "https://www.steadymd.com/?ref=M25", class: "state_MO funds2 business_B2C industry_healthcare" ,img: "SteadyMD"},
