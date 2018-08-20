@@ -1,4 +1,7 @@
 var portfolio = [
+{url: "https://fourstarzz.com?ref=M25", class: "state_NE funds2 business_B2C industry_analytics industry_entertainment" ,img: "Fourstarzz"},
+{url: "https://pitchly.net?ref=M25", class: "state_IA funds2 business_B2B  industry_enterprise " ,img: "Pitchly"},
+{url: "https://truepublic.com?ref=M25", class: "state_IL funds2 business_B2C industry_apps industry_analytics" ,img: "TruePublic"},
 {url: "https://winstonprivacy.com/?ref=M25", class: "state_IL funds2 business_B2C industry_other" ,img: "Winston"},
 {url: "https://bezl.io/?ref=M25", class: "state_OH funds2 business_B2B industry_ecommerce" ,img: "Bezlio"},
 {url: "https://loopreturns.com/?ref=M25", class: "state_OH funds2 business_B2C business_B2B industry_transportation" ,img: "Loop"},
