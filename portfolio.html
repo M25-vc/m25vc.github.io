@@ -157,16 +157,17 @@
     a.funds:hover, label.funds:hover, 
     a.state:hover, label.state:hover, 
     a.industry:hover, label.industry:hover, 
-    a.business:hover, label.business:hover{
+    a.business:hover, label.business:hover,
+    a.status:hover, label.status:hover{
       cursor: hand !important; cursor: pointer !important;
     }
 
 
-    a.funds, a.state, a.industry, a.business, a.clone {
+    a.funds, a.state, a.industry, a.business, a.status, a.clone {
       padding: 5px; 
     }
     label.funds, label.state, label.business, 
-    label.industry{
+    label.industry, label.statu{
       /*     margin-top: 5px; 
       margin-bottom: 5px;*/
     }
@@ -232,7 +233,7 @@
     }
     @media (max-width: 767px){
 
-      label.funds, label.state, label.business, label.industry, .option-set a, #filters #filter-display, #filter-counter,.filter-btn {
+      label.funds, label.state, label.business, label.industry, label.status, .option-set a, #filters #filter-display, #filter-counter,.filter-btn {
         font-size: .75rem;
       }
       #myTab a{
@@ -299,6 +300,7 @@
                   <li class="nav-item business business-nav"><a href="portfolio#business" class="nav-link" data-toggle="tab">Business</a></li>
                   <li class="nav-item state state-nav"><a href="portfolio#state" class="nav-link" data-toggle="tab">States</a></li>
                   <li class="nav-item funds funds-nav"><a href="portfolio#funds" class="nav-link" data-toggle="tab" >Funds</a></li>
+                  <li class="nav-item status status-nav"><a href="portfolio#status" class="nav-link" data-toggle="tab" >Status</a></li>
                 </ul>
                 <div class="tab-content text-center">
                   <div class="tab-pane fade show" id="funds">
@@ -330,6 +332,14 @@
                       <a class="business business_B2C" id="business_B2C" data-filter-value=".business_B2C"><label class="business" for="business_B2C">B2C</label></a>
                     </div>
                   </div>
+                  <div class="option-combo status tab-pane" id="status">
+                    <div class="filter option-set" data-filter-group="status">
+                      <a class="status status_active" id="status_active" data-filter-value=".status_active"><label class="status" for="status_active">Active</label></a>
+                      <a class="status status_acquired" id="status_acquired" data-filter-value=".status_acquired"><label class="status" for="status_acquired">Acquired</label></a>
+                      <a class="status status_inactive" id="status_inactive" data-filter-value=".status_inactive"><label class="status" for="status_inactive">Inactive</label></a>
+
+                    </div>
+                  </div>
                   <div class="option-combo industry tab-pane active" id="industry">
                     <div class="filter option-set" data-filter-group="industry">
                       <a class="industry industry_analytics" id="industry_analytics" data-filter-value=".industry_analytics"><label class="industry" for="industry_analytics">Analytics, Big Data & IOT</label></a>|
@@ -343,7 +353,7 @@
                       <a class="industry industry_healthcare" id="industry_healthcare" data-filter-value=".industry_healthcare"><label class="industry" for="industry_healthcare">Healthcare</label></a>|
                       <a class="industry industry_marketing" id="industry_marketing" data-filter-value=".industry_marketing"><label class="industry" for="industry_marketing">Marketing</label></a>|
                       <a class="industry industry_realestate" id="industry_realestate" data-filter-value=".industry_realestate"><label class="industry" for="industry_realestate">Real Estate</label></a>|
-                      <a class="industry industry_transportation" id="industry_transportation" data-filter-value=".industry_transportation"><label class="industry" for="industry_transportation">Transportation & Logistics</label></a>|
+                      <a class="industry industry_transportation" id="industry_transportation" data-filter-value=".industry_transportation"><label class="industry" for="industry_transportation">Transportation & Logistics</label></a>
                     </div>
                   </div>
                 </div>
@@ -543,6 +553,28 @@
           }
         }
       });
+       // status
+      $('a.status:not(.clone)').each(function() {
+        var $this = $(this);
+        var getVal = $this.attr('data-filter-value');
+        var numItems = $('img'+getVal+':not(.isotope-hidden)').length;
+        if(!$(this).hasClass('active') && !$that.hasClass('status') ){
+          if(numItems == 0){
+            $this.addClass('disabled');
+          }
+          else {
+            $this.removeClass('disabled');
+          }
+        }
+        else if( $this.hasClass('active') && $this.hasClass('disabled') ){
+          $this.removeClass('disabled');
+        }
+        else if(!$(this).hasClass('active') ) {
+          if(numItems > 0){
+            $this.removeClass('disabled');
+          }
+        }
+      });
       // industry
       $('a.industry:not(.clone)').each(function() {
         var $this = $(this);
@@ -585,28 +617,38 @@
       if ( comboFilter.indexOf('state') == -1 
         && comboFilter.indexOf('business') == -1 
         && comboFilter.indexOf('industry') == -1 
+        && comboFilter.indexOf('status') == -1 
         && comboFilter.indexOf('funds') > 0 ){
         $('a.funds:not(.clone)').removeClass('disabled');
     }
     if ( comboFilter.indexOf('funds') == -1 
       && comboFilter.indexOf('business') == -1 
       && comboFilter.indexOf('industry') == -1 
+      && comboFilter.indexOf('status') == -1 
       && comboFilter.indexOf('state') > 0 ){
       $('a.state:not(.clone)').removeClass('disabled');
   }
   if ( comboFilter.indexOf('funds') == -1 
     && comboFilter.indexOf('state') == -1 
     && comboFilter.indexOf('industry') == -1 
+    && comboFilter.indexOf('status') == -1 
     && comboFilter.indexOf('business') > 0 ){
     $('a.business:not(.clone)').removeClass('disabled');
 }
 if ( comboFilter.indexOf('funds') == -1 
   && comboFilter.indexOf('state') == -1 
   && comboFilter.indexOf('business') == -1 
+  && comboFilter.indexOf('status') == -1 
   && comboFilter.indexOf('industry') > 0 ){
   $('a.industry:not(.clone)').removeClass('disabled');
 }
-
+if ( comboFilter.indexOf('funds') == -1 
+  && comboFilter.indexOf('state') == -1 
+  && comboFilter.indexOf('business') == -1 
+  && comboFilter.indexOf('industry') == -1 
+  && comboFilter.indexOf('status') > 0 ){
+  $('a.status:not(.clone)').removeClass('disabled');
+}
       // filter display count
       var numItemsHidden = $('img.item.isotope-hidden').length;
       var numItemsDisp = $('img.item:not(.isotope-hidden)').length;
