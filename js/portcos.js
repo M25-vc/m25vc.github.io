@@ -1,4 +1,6 @@
-var portfolio = [{url: "http://www.aspinity.com?ref=M25", class: "state_PA funds2 business_B2B industry_analytics   industry_hardware status_active" ,img: "Aspinity"},
+var portfolio = [
+{url: "https://spellboundar.com?ref=M25", class: "state_MI funds2 business_B2B industry_entertainment     status_active" ,img: "Spellbound"},
+{url: "http://www.aspinity.com?ref=M25", class: "state_PA funds2 business_B2B industry_analytics   industry_hardware status_active" ,img: "Aspinity"},
 {url: "http://faithbox.com?ref=M25", class: "state_NE funds2 business_B2C industry_ecommerce     status_active" ,img: "Faithbox"},
 {url: "https://rmarkbio.com/?ref=M25", class: "state_IL funds2 business_B2B industry_healthcare     status_active" ,img: "rMarkBio"},
 {url: "https://fourstarzz.com?ref=M25", class: "state_NE funds2 business_B2B industry_entertainment   industry_enterprise status_active" ,img: "Fourstarzz"},
