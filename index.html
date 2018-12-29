@@ -5,12 +5,21 @@
   <script data-cfasync="false" type="text/javascript"></script>
   <!-- Global site tag (gtag.js) - Google Analytics -->
   <script async src="https://www.googletagmanager.com/gtag/js?id=UA-114986242-1"></script>
+  <script src='https://www.google.com/recaptcha/api.js?render=6Lc5mYUUAAAAAIpmaAwPXA3L6oq6zzIog89wM5zH'></script>
   <script>
    window.dataLayer = window.dataLayer || [];
    function gtag(){dataLayer.push(arguments);}
    gtag('js', new Date());
 
    gtag('config', 'UA-114986242-1');
+
+   grecaptcha.ready(function() {
+    grecaptcha.execute('6Lc5mYUUAAAAAIpmaAwPXA3L6oq6zzIog89wM5zH', {action: 'action_name'})
+    .then(function(token) {
+    // Verify the token on the server.
+    });
+});
+
  </script>
  <meta charset="utf-8">
  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
@@ -399,18 +408,11 @@
             <label>Your Message</label>
             <textarea name="entry.2126718973" class="form-control" rows="3" placeholder=""/></textarea>
           </div>
-          <span class="msg-error error"></span>
-
-          <div id="recaptcha" class="g-recaptcha" data-sitekey="6LemeloUAAAAAFbCxWkUKRRslZiiMycxXE6cHAAv"></div>
 
           <div id="form_sub" class="alert alert-success" role="alert">
             <strong>Thank you!</strong> Your message was sent successfully.
           </div>
 
-<!--           <div id="form_error" class="alert alert-warning" role="alert">
-            reCAPTCHA is mandatory.
-          </div>
- -->
           <button id="submit_btn" type="submit" class="btn btn-m25">Submit</button>
           <p>* required</p>
         </form>
