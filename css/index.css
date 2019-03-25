@@ -74,6 +74,10 @@ section {
     overflow-y: scroll;
 }
 
+.footer_iocn{
+  padding-left: 10px;
+  color: white;
+}
 
 
 @media (min-width: 992px) { 
