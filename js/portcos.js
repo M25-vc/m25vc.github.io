@@ -1,4 +1,7 @@
-var portfolio = [{url: "https://humanpredictions.io/?ref=M25", class: "state_IL funds2 business_B2B business_B2C industry_enterprise     status_active" ,img: "humanpredictions"},
+var portfolio = [{url: "https://abre.io?ref=M25", class: "state_OH funds2 business_B2B industry_education     status_active" ,img: "Abre"},
+{url: "https://www.86repairs.com?ref=M25", class: "state_IL funds2 business_B2B industry_food industry_enterprise   status_active" ,img: "86Repairs"},
+{url: "https://tripscout.co?ref=M25", class: "state_IL funds2 business_B2B business_B2C industry_apps     status_active" ,img: "TripScout"},
+{url: "https://humanpredictions.io/?ref=M25", class: "state_IL funds2 business_B2B business_B2C industry_enterprise     status_active" ,img: "humanpredictions"},
 {url: "https://www.pearachutekids.com/?ref=M25", class: "state_IL funds2 business_B2B business_B2C industry_apps industry_ecommerce   status_active" ,img: "Pearachute"},
 {url: "https://www.opscompass.com/?ref=M25", class: "state_NE funds2 business_B2B industry_enterprise     status_active" ,img: "OpsCompass"},
 {url: "https://www.datanchor.net?ref=M25", class: "state_OH funds2 business_B2B industry_enterprise     status_active" ,img: "DatAnchor"},
