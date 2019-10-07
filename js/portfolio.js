@@ -1,6 +1,6 @@
 function getportfolioDetails(portfolio) {
 	return `<a href="${portfolio.url}" target="_blank">
-              <img class="item ${portfolio.class} isotope-item" src="img/portfolio/${portfolio.img}.jpg" alt="${portfolio.img}" style="position: absolute; left: 0px; top: 0px; margin:20px;width:200px;height:100px;">
+              <img class="item ${portfolio.class} isotope-item" src="img/portfolio/${portfolio.img}.jpg" alt="${portfolio.alt}" style="position: absolute; left: 0px; top: 0px; margin:20px;width:200px;height:100px;">
             </a>`;
 
 }
