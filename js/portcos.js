@@ -1,4 +1,6 @@
-var portfolio = [{url: "http://dynamometrics.com?ref=M25", class: "state_MI funds3 business_B2B industry_education industry_analytics   status_active" ,img: "Dynamo Metrics" ,alt: "Dynamo Metrics - local government data"},
+var portfolio = [{url: "https://www.rentgrata.com/?ref=M25", class: "state_IL funds3 business_B2B industry_realestate     status_active" ,img: "Rentgrata" ,alt: "Rentgrata - messaging platform that connects prospective renters with current residents of apartment communities"},
+{url: "https://www.axuall.com/?ref=M25", class: "state_OH funds3 business_B2B industry_healthcare     status_active" ,img: "Axuall" ,alt: "Axuall - digital credentials"},
+{url: "http://dynamometrics.com?ref=M25", class: "state_MI funds3 business_B2B industry_education industry_analytics   status_active" ,img: "Dynamo Metrics" ,alt: "Dynamo Metrics - local government data"},
 {url: "http://preflight.com?ref=M25", class: "state_IL funds3 business_B2B industry_analytics     status_active" ,img: "PreFlight" ,alt: "PreFlight - Automatic UI testing"},
 {url: "https://www.goelate.com?ref=M25", class: "state_IN funds3 business_B2B industry_enterprise industry_analytics   status_active" ,img: "Elate" ,alt: "Elate - Resource planning platform"},
 {url: "http://pearcommerce.com?ref=M25", class: "state_MN funds3 business_B2B business_B2C industry_marketing     status_active" ,img: "Pear Commerce" ,alt: "Pear Commerce - Bridges the gap between CPG brands and their retailers"},
