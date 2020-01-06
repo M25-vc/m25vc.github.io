@@ -128,7 +128,7 @@ function getTeamDetails(team) {
                   <h6 class="font-weight-bold_2">${team.title}</h6>
                   <p>${team.desc}
                   </p>
-                  <p><i>Uber Rating: ${team.urating}</i>
+                  <p><i>Uber/Lyft Rating: ${team.urating}</i>
                   </p>
                   <p>
                     ${team_linkedin}
