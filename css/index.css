@@ -11,6 +11,10 @@ font-family: 'Oxygen', sans-serif;
     color: #8f0014;
 }
 
+.btn:not(:disabled):not(.disabled) {
+    cursor: pointer;
+}
+
 .btn-m25 { 
 	color: white; 
 	background-color: #e66432;
