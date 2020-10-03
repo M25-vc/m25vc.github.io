@@ -391,6 +391,11 @@
           <form action="https://docs.google.com/forms/d/e/1FAIpQLSdawaJdlvLNggNlDn68A5QZcfk5U-obfC2WN3VI--pPx4CGng/formResponse" method="post" target="hidden_iframe" 
           onsubmit="return validateForm()">
           <div class="form-row">
+          	<div class="form-group">
+	          	<label class="ohnoformname" for="name"></label>
+	    		<input class="ohnoformname" autocomplete="off" autocapitalize="off" type="text"  id="contactFormbusinessname" name="name" placeholder="Your name here">
+	    	</div>
+
             <div class="form-group col-md-6">
               <label>Name*</label>
               <input name="entry.2102735960" type="text" class="form-control" placeholder="Jane Doe" required />
@@ -408,9 +413,6 @@
             <label>Your Message</label>
             <textarea name="entry.2126718973" class="form-control" rows="3" placeholder=""/></textarea>
           </div>
-
-       	    <label class="ohnoformname" for="name"></label>
-    		<input class="ohnoformname" autocomplete="off" autocapitalize="off" type="text"  id="contactFormbusinessname" name="name" placeholder="Your name here">
 
           <div id="form_sub" class="alert alert-success" role="alert">
             <strong>Thank you!</strong> Your message was sent successfully.
