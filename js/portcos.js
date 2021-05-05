@@ -1,4 +1,4 @@
-var portfolio = [{url: "", class: "state_IL funds3 business_B2B industry_enterprise industry_transportation   status_active" ,img: "StealthD" ,alt: "StealthD"},
+var portfolio = [{url: "", class: "state_IL funds3 business_B2B industry_enterprise industry_transportation   status_active" ,img: "StealthD" ,alt: ""},
 {url: "https://useworkshop.com/?ref=M25", class: "state_NE funds3 business_B2B industry_enterprise     status_active" ,img: "Workshop" ,alt: "Workshop - Internal communications and employee engagement platform"},
 {url: "https://www.travasecurity.com/?ref=M25", class: "state_IN funds3 business_B2B industry_enterprise industry_finance   status_active" ,img: "Trava" ,alt: "Trava - Simplifying cyber risk management for business owners and IT professionals through automated assessments, mitigation advising, and data-driven cyber insurance"},
 {url: "", class: "state_MI funds3 business_B2B business_B2C       status_active" ,img: "StealthC" ,alt: ""},
@@ -39,7 +39,7 @@ var portfolio = [{url: "", class: "state_IL funds3 business_B2B industry_enterpr
 {url: "https://bezl.io/?ref=M25", class: "state_OH funds2 business_B2B industry_enterprise     status_active" ,img: "Bezlio" ,alt: "Bezlio - Bezlio brings a business's data to any mobile device."},
 {url: "https://loopreturns.com/?ref=M25", class: "state_OH funds2 business_B2B industry_transportation industry_enterprise   status_active" ,img: "Loop Returns" ,alt: "Loop Returns - Loop helps ecommerce retailers make returns more efficient, cost-effective and customer-friendly"},
 {url: "https://zohr.com/?ref=M25", class: "state_MO funds2 business_B2B business_B2C industry_transportation     status_active" ,img: "Zohr" ,alt: "Zohr - Zohr sells tires online and installs them at the customer home or business."},
-"{url: ""https://www.meetbreeze.com/?ref=M25"", class: ""state_NE funds2 business_B2C industry_finance industry_healthcare   status_active"" ,img: ""Breeze"" ,alt: ""Breeze - Convenient, affordable disability insurance made available in a fraction of the time of other providers""},"
+{url: "https://www.meetbreeze.com/?ref=M25", class: "state_NE funds2 business_B2C industry_finance industry_healthcare   status_active" ,img: "Breeze" ,alt: "Breeze - Convenient, affordable disability insurance made available in a fraction of the time of other providers"},
 {url: "https://localcrate.com?ref=M25", class: "state_MN funds2 business_B2C industry_food industry_ecommerce   status_active" ,img: "LocalCrate" ,alt: "LocalCrate - Local Crate delivers fresh, delicious, seasonal meal kits"},
 {url: "https://www.steadymd.com/?ref=M25", class: "state_MO funds2 business_B2C industry_healthcare     status_active" ,img: "SteadyMD" ,alt: "SteadyMD - Online personalized primary care"},
 {url: "https://www.gosummersalt.com?ref=M25", class: "state_MO funds2 business_B2C industry_ecommerce     status_active" ,img: "Summersalt" ,alt: "Summersalt - Designer quality swimwear for $95"},

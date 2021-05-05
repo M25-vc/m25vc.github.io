@@ -9,7 +9,3 @@ function showportfolio(portfolioDetails) {
 
 }
 portfolio.map(getportfolioDetails).forEach(showportfolio);
-
-
-
-
