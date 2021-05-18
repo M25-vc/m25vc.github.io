@@ -375,26 +375,32 @@
 
           <p>INVESTORS: We only work with accredited investors that know one of our <a href="home#team">team members</a>. Please reach out to one of them if you are interested in hearing more about our investment strategy/philosophy, portfolio companies, or future funds.</p>
         </div>
+
+        <div id="form_sub" class="alert alert-success" role="alert">
+          <strong>Thank you!</strong> Your message was sent successfully.
+        </div>
+
         <script type="text/javascript">
           var submitted=false;
-			function validateForm() {
-				var bizname = document.getElementById("contactFormbusinessname").value;
-				if (bizname) {
-					return false;
-				}else{
-					submitted=true;
-					return true;
-				}
-			}
+    			function validateForm() {
+    				var bizname = document.getElementById("contactFormbusinessname").value;
+    				if (bizname) {
+    					return false;
+    				}else{
+    					submitted=true;
+              $("#contact_form_sub").hide();
+    					return true;
+    				}
+    			}
           
         </script>
-          <form action="https://docs.google.com/forms/d/e/1FAIpQLSdawaJdlvLNggNlDn68A5QZcfk5U-obfC2WN3VI--pPx4CGng/formResponse" method="post" target="hidden_iframe" 
+          <form id="contact_form_sub" action="https://docs.google.com/forms/d/e/1FAIpQLSdawaJdlvLNggNlDn68A5QZcfk5U-obfC2WN3VI--pPx4CGng/formResponse" method="post" target="hidden_iframe" 
           onsubmit="return validateForm()">
-          <div class="form-row">
-          	<div class="form-group">
-	          	<label class="ohnoformname" for="name"></label>
-	    		<input class="ohnoformname" autocomplete="off" autocapitalize="off" type="text"  id="contactFormbusinessname" name="name" placeholder="Your name here">
-	    	</div>
+            <div class="form-row">
+            	<div class="form-group">
+  	          	<label class="ohnoformname" for="name"></label>
+  	    		   <input class="ohnoformname" autocomplete="off" autocapitalize="off" type="text"  id="contactFormbusinessname" name="name" placeholder="Your name here">
+  	    	</div>
 
             <div class="form-group col-md-6">
               <label>Name*</label>
@@ -414,9 +420,7 @@
             <textarea name="entry.2126718973" class="form-control" rows="3" placeholder=""/></textarea>
           </div>
 
-          <div id="form_sub" class="alert alert-success" role="alert">
-            <strong>Thank you!</strong> Your message was sent successfully.
-          </div>
+          
           
           <div class="g-recaptcha" data-sitekey="6Lc5mYUUAAAAAIpmaAwPXA3L6oq6zzIog89wM5zH"></div>
 
