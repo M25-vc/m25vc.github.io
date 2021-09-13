@@ -120,30 +120,48 @@ canvas {
   width: 200px;
 }
 
-.team-link:hover {
-    opacity: 0.5
-
-}
-
 .team-link {
     position: relative;
     display: inline-block;
 }
 
-
-.team-link:hover .external_link {
-    display: block;
+ .imageBox {
+  position: relative;
+  float: left;
 }
- 
+
+.hoverImg {
+  position: relative;
+}
+
+.imageBox .hoverImg {
+  position: absolute;
+  left: 0;
+  top: 0;
+  display: none;
+}
+
+#about{
+  padding: 0;
+}
+.imageBox:hover .hoverImg {
+  display: block;
+}
+
+.imageBox:hover .external_link {
+  display: block;
+  opacity: 1;
+}
+
 .external_link {
     position: absolute;
-    right: 40%;
-    top: 35%;
-    display: none;
+    left: 45%;
+    bottom: 0%;
 }
 
 .external_link{
-    font-size: 40px;
+    opacity: 0;
+    font-size: 20px;
     color: #e66432;
 }
 
