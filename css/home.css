@@ -120,10 +120,6 @@ canvas {
   width: 200px;
 }
 
-.team-link:hover {
-    opacity: 0.5
-
-}
 
 .team-link {
     position: relative;
@@ -134,18 +130,49 @@ canvas {
 .team-link:hover .external_link {
     display: block;
 }
- 
-.external_link {
-    position: absolute;
-    right: 40%;
-    top: 35%;
-    display: none;
-}
 
-.external_link{
-    font-size: 40px;
-    color: #e66432;
-}
+
+.imageBox {
+   position: relative;
+   float: left;
+ }
+
+ .hoverImg {
+   position: relative;
+ }
+
+ .imageBox .hoverImg {
+   position: absolute;
+   left: 0;
+   top: 0;
+   display: none;
+ }
+
+ #about{
+   padding: 0;
+ }
+ .imageBox:hover .hoverImg {
+   display: block;
+ }
+
+ .imageBox:hover .external_link {
+   display: block;
+   opacity: 1;
+ }
+
+ .external_link {
+     position: absolute;
+     left: 45%;
+     bottom: 0%;
+ }
+
+ .external_link{
+     opacity: 0;
+     font-size: 20px;
+     color: #e66432;
+ }
+
+
 
 .advisors-item img{
   height: 150px;
