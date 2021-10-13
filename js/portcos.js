@@ -1,4 +1,6 @@
-var portfolio = [{url: "", class: "state_OH funds3 business_B2B industry_apps     status_active" ,img: "StealthK" ,alt: ""},
+var portfolio = [{url: "", class: "state_OH funds3 business_B2C industry_apps     status_active" ,img: "StealthL" ,alt: ""},
+{url: "https://www.redi.health/", class: "state_OH funds3 business_B2B business_B2C industry_healthcare     status_active" ,img: "Redi.Health" ,alt: "Redi.Health - Allows pharma manufacturers to offer direct support to improve adherence for patients that purchase medications for chronic conditions through an end-to-end health navigation tool"},
+{url: "", class: "state_OH funds3 business_B2B industry_apps     status_active" ,img: "StealthK" ,alt: ""},
 {url: "", class: "state_IL funds3 business_B2C       status_active" ,img: "StealthJ" ,alt: ""},
 {url: "", class: "state_IL funds3 business_B2B industry_enterprise     status_active" ,img: "StealthI" ,alt: ""},
 {url: "https://www.qooper.io/", class: "state_IL funds3 business_B2C industry_enterprise     status_active" ,img: "Qooper" ,alt: "Qooper - All-in-one, people development platform with mentorship, coaching, learning, groups, and opportunity solutions"},
