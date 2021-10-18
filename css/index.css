@@ -83,6 +83,11 @@ section {
   color: white;
 }
 
+.two_column {
+  columns: 2;
+  -webkit-columns: 2;
+  -moz-columns: 2;
+}
 
 @media (min-width: 992px) { 
 	.fa-2x{
