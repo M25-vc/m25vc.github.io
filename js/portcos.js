@@ -1,4 +1,6 @@
-var portfolio = [{url: "", class: "state_MN funds3 business_B2B industry_healthcare     status_active" ,img: "Unannounced N" ,alt: "Unannounced N - "},
+var portfolio = [{url: "", class: "state_MO funds3 business_B2B industry_enterprise     status_active" ,img: "Unannounced P" ,alt: "Unannounced P - "},
+{url: "", class: "state_IL funds3 business_B2B       status_active" ,img: "Unannounced O" ,alt: "Unannounced O - "},
+{url: "", class: "state_MN funds3 business_B2B industry_healthcare     status_active" ,img: "Unannounced N" ,alt: "Unannounced N - "},
 {url: "https://www.stagetimearts.com/?ref=M25", class: "state_IN funds3 business_B2C industry_apps industry_entertainment   status_active" ,img: "Stagetime" ,alt: "Stagetime - An online network where artists, artistic administrators, and agents can grow as professionals."},
 {url: "", class: "state_OH funds3 business_B2C industry_apps     status_active" ,img: "Unannounced L" ,alt: "Unannounced L - "},
 {url: "https://www.redi.health/?ref=M25", class: "state_OH funds3 business_B2B business_B2C industry_healthcare     status_active" ,img: "Redi.Health" ,alt: "Redi.Health - Allows pharmaceutical manufacturers to offer direct support to improve adherence for patients that purchase medications for chronic conditions through an end-to-end health navigation tool"},
