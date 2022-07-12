@@ -1,4 +1,4 @@
-var portfolio = [{url: "http://www.whipz.co/", class: "state_MO funds3 business_B2C       status_active" ,img: "Unannounced - D" ,alt: "Whipz - E-commerce platform for buying affordable used cars."},
+var portfolio = [{url: "http://www.whipz.com/", class: "state_MO funds3 business_B2C       status_active" ,img: "Whipz" ,alt: "Whipz - E-commerce platform for buying affordable used cars."},
 {url: "https://www.improovy.com/", class: "state_IL funds3 business_B2C industry_apps     status_active" ,img: "Improovy" ,alt: "Improovy - Concierge style solution to connect contractors with homeowners, starting with painting"},
 {url: "", class: "state_MO funds3 business_B2C industry_healthcare     status_active" ,img: "Unannounced - C" ,alt: "Peppermint - D2C Brand focused on senior / elderly lifestyle, starting with a better walker"},
 {url: "https://www.playbite.com/", class: "state_MO funds3 business_B2C       status_active" ,img: "Playbite" ,alt: "Playbite - Playbite is the arcade of web3, where users can earn tokens and real prizes for playing free mobile games."},
