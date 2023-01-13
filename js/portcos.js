@@ -1,4 +1,5 @@
-var portfolio = [{url: "https://www.joinstatus.co/?ref=M25", class: "state_OH funds3 business_B2C industry_ecommerce     status_active" ,img: "Status" ,alt: "Status - Shopify app for optimizing the customer account experience"},
+var portfolio = [{url: "https://www.thehummingbirds.co/?ref=M25", class: "state_IA funds3 business_B2C industry_marketing     status_active" ,img: "Hummingbirds" ,alt: "Hummingbirds - Marketplace for small businesses to find and work with locally-based content creators to drive sales"},
+	{url: "https://www.joinstatus.co/?ref=M25", class: "state_OH funds3 business_B2C industry_ecommerce     status_active" ,img: "Status" ,alt: "Status - Shopify app for optimizing the customer account experience"},
 {url: "http://www.whipz.com/?ref=M25", class: "state_MO funds3 business_B2C       status_active" ,img: "Whipz" ,alt: "Whipz - E-commerce platform for buying affordable used cars."},
 {url: "https://www.improovy.com/?ref=M25", class: "state_IL funds3 business_B2C industry_apps     status_active" ,img: "Improovy" ,alt: "Improovy - Concierge style solution to connect contractors with homeowners, starting with painting"},
 {url: "", class: "state_MO funds3 business_B2C industry_healthcare     status_active" ,img: "Unannounced - C" ,alt: "Peppermint - D2C Brand focused on senior / elderly lifestyle, starting with a better walker"},
