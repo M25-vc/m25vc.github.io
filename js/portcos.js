@@ -1,5 +1,6 @@
 var portfolio = [{url: "", class: "state_OH funds4 business_B2B industry_finance     status_active" ,img: "Unannounced - C" ,alt: "Vigil - Annuity operations SaaS for insurance carriers, distributors (IMOs), and financial advisors"},
 {url: "https://www.titlewise.work/?ref=M25", class: "state_IN funds4 business_B2B       status_active" ,img: "TitleWise" ,alt: "TitleWise - Project management software for the title search industry"},
+{url: "https://waldologs.com/?ref=M25", class: "state_MI funds4 business_B2B industry_enterprise     status_active" ,img: "Waldo" ,alt: "Waldo - Intelligent Supply Chain Software for the Logging Industry"},
 {url: "https://www.thehummingbirds.co/?ref=M25", class: "state_IA funds3 business_B2C industry_marketing     status_active" ,img: "Hummingbirds" ,alt: "Hummingbirds - Marketplace for small businesses to find and work with locally-based content creators to drive sales"},
 {url: "https://www.statusaccounts.com/?ref=M25", class: "state_OH funds3 business_B2C industry_ecommerce     status_active" ,img: "Status" ,alt: "Status - Shopify app for optimizing the customer account experience"},
 {url: "http://www.whipz.com/?ref=M25", class: "state_MO funds3 business_B2C       status_active" ,img: "Whipz" ,alt: "Whipz - E-commerce platform for buying affordable used cars."},
