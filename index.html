@@ -37,8 +37,8 @@
  <link href="vendor/fontawesome/css/brands.css" rel="stylesheet">
  <link href="vendor/fontawesome/css/solid.css" rel="stylesheet">
  <script src="vendor/typeit/typeit.min.js"></script>
- <script src='https://www.google.com/recaptcha/api.js'></script> 
- 
+ <script src="https://www.google.com/recaptcha/api.js"></script>
+
  <!-- for FF, Chrome, Opera -->
  <link rel="icon" type="image/png" href="img/favicons/favicon-16x16.png" sizes="16x16">
  <link rel="icon" type="image/png" href="img/favicons/favicon-32x32.png" sizes="32x32">
@@ -376,7 +376,10 @@
     			}
           
         </script>
-          <form id="contact_form_sub" action="https://docs.google.com/forms/d/e/1FAIpQLSdawaJdlvLNggNlDn68A5QZcfk5U-obfC2WN3VI--pPx4CGng/formResponse" method="post" target="hidden_iframe" 
+          <form id="contact_form_sub" action="https://docs.google.com/forms/d/e/1FAIpQLSdawaJdlvLNggNlDn68A5QZcfk5U-obfC2WN3VI--pPx4CGng/formResponse" method="post" target="hidden_iframe" class="g-recaptcha" 
+        data-sitekey="6LeBAyopAAAAAIoObWB8VNc18P-IhA8YRRm0Ahdt" 
+        data-callback='onSubmit' 
+        data-action='submit'
           onsubmit="return validateForm()">
             <div class="form-row">
             	<div class="form-group">
@@ -404,7 +407,7 @@
 
           
           
-          <div class="g-recaptcha" data-sitekey="6Lc5mYUUAAAAAIpmaAwPXA3L6oq6zzIog89wM5zH"></div>
+          <!-- <div class="g-recaptcha" data-sitekey="6Lc5mYUUAAAAAIpmaAwPXA3L6oq6zzIog89wM5zH"></div> -->
 
 
           <button id="submit_btn" type="submit" class="btn btn-m25">Submit</button>
