@@ -1,10 +1,10 @@
 @font-face { 
-font-family: 'Heavitas';
-src: url('/img/font/Heavitas.tiff') format('tiff');
+    font-family: 'myHeavitas';
+    src: url('../img/font/Heavitas.ttf') format('truetype');
 }
 
 body{
-font-family: 'Oxygen', sans-serif;
+    font-family: 'Oxygen', sans-serif;
 }
 
 #myNavbar{
@@ -55,7 +55,7 @@ section {
   border-bottom: 5px solid #e66432;
   text-align: center;
   margin: 0 auto;
-  font-family: Heavitas;
+  font-family: 'myHeavitas', sans-serif;
 }
 
 .font-weight-bold{
