@@ -16,9 +16,13 @@ body{
 }
 
 #myNavbarSummit{
-/*  background-color: rgb(255, 255, 255, .2);
-  font-weight: bold;*/
-  position: absolute;
+  background-color: rgb(255, 255, 255, .2);
+  font-weight: bold;
+/*  position: absolute;*/
+  position:absolute;
+      width:100%;
+      z-index:10;
+      max-width:100%;
 }
 
 #myNavbar{
