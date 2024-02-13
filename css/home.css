@@ -2,6 +2,10 @@
   width: 70%;
   height: auto;
 }
+.summit_logo_img img{
+  width: 20%;
+  height: auto;
+}
 
 .home-link img{
   width: 55%;
@@ -10,7 +14,7 @@
 
 .summit_page img{
   width: 20%;
-  height: 20%;
+  height: 15%;
 }
 
 .home-link, .summit_page{
@@ -30,6 +34,7 @@
   -moz-background-size: cover;
   -o-background-size: cover;
   background-size: cover;
+
 }
 #video_background {
   width: 100vw;
@@ -50,6 +55,12 @@
 
   background: white;
   overflow: hidden;
+  position: relative
+  top: -30px;
+}
+
+.summit_car{
+  position: fixed;
 }
 canvas {
   position: absolute;
