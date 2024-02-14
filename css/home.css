@@ -86,7 +86,8 @@ canvas {
   overflow: hidden;
   padding-top: 10%;
 }
-.tagLine h2{
+.tagLine h1{
+      font-size: 9vw !important;
   font-weight: bold;
 }
 .name_font{
@@ -112,7 +113,7 @@ canvas {
 
 #typed, .typing{
   color:#8f0014;
-  font-size: 2.5vw;
+  font-size: 3.5vw;
 
 }
 .ti-cursor {
