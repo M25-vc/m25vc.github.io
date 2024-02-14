@@ -213,6 +213,13 @@ canvas {
   width: 150px;
 }
 
+.social_icon_home{
+  color: #e66432;
+}
+
+.social_icon_home:hover {
+  color: #8f0014;
+}
 .icon-twitter {
   color: #55ACEE;
 }

@@ -55,7 +55,7 @@ $(function () {
 				// console.log(item.title);
 				if(!item.title.match("Why We Invested")){
 					blogCounter++
-					console.log(blogCounter);
+					// console.log(blogCounter);
 					output += '<div class="card card-1" style="width: 20rem;">';
 					var tagIndex = item.description.indexOf('<img'); 
 					var srcIndex = item.description.substring(tagIndex).indexOf('src=') + tagIndex; 
