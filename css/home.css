@@ -2,10 +2,6 @@
   width: 70%;
   height: auto;
 }
-.summit_logo_img img{
-  width: 20%;
-  height: auto;
-}
 
 .home-link img{
   width: 55%;
@@ -27,6 +23,10 @@
   font-size: 140%;
 }
 
+.summit_number_text{
+  color: #e66432;
+  font-size: 100%;
+}
 .home-link:hover{
   color: #e66432;
   text-decoration: none;

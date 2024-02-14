@@ -8,10 +8,14 @@ body{
 }
 
 #myNavbarHome{
-  background-color: rgb(255, 255, 255, .2);
-  font-weight: bold;
+/*  background-color: rgb(255, 255, 255, .2);*/
+/*  font-weight: bold;*/
 /*  opacity: 0.2;*/
 /*  border-bottom: 3px solid #e66432;*/
+
+font-weight: bold;
+  background-color: white;
+  border-bottom: 3px solid #e66432;
 
 }
 
@@ -27,13 +31,17 @@ body{
 }
 
 #myNavbarSummit{
-  background-color: rgb(255, 255, 255, .2);
-  font-weight: bold;
+/*  background-color: rgb(255, 255, 255, .2);*/
+/*  font-weight: bold;*/
 /*  position: absolute;*/
   position:absolute;
       width:100%;
       z-index:10;
       max-width:100%;
+
+      font-weight: bold;
+  background-color: white;
+  border-bottom: 3px solid #e66432;
 }
 
 #myNavbar{
@@ -83,12 +91,21 @@ section {
       padding-top: 0px;
 
 }
+
+.summit_logo_img img{
+  width: 20%;
+  height: auto;
+}
+
+
 .sectionTitle{
   display: inline;
   border-bottom: 5px solid #e66432;
   text-align: center;
   margin: 0 auto;
-  font-family: 'myHeavitas', sans-serif;
+/*  font-family: 'myHeavitas', sans-serif;*/
+    font-family: 'Oxygen', sans-serif;
+
 }
 
 .font-weight-bold{
@@ -173,9 +190,26 @@ span {
 
 
 
+  @media (min-width: 0px) and (max-width: 576px) {
+
+ .scroll {
+  width: 300vw;
+
+}
+
+.summit_logo_img img{
+  width: 90%;
+  height: auto;
+}
+
+
+}
+
 @media (min-width: 992px) { 
 	.fa-2x{
 	    font-size: 3.5vw !important;
 	}
+
+
 
 }
