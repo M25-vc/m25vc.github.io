@@ -87,12 +87,12 @@ canvas {
   padding-top: 10%;
 }
 .tagLine h1{
-  font-size: 8vw !important;
+  font-size: 11vh !important;
   font-weight: bold;
 }
 
 .tagLine_summit h1{
-  font-size: 2vw !important;
+  font-size: 3vh !important;
   font-weight: bold;
 }
 .name_font{
@@ -118,7 +118,7 @@ canvas {
 
 #typed, .typing{
   color:#8f0014;
-  font-size: 3.5vw;
+  font-size: 5vh;
 
 }
 .ti-cursor {
@@ -359,7 +359,7 @@ a:hover{
     }
 
     #typed,.typing, .ti-cursor {
-      font-size: 4vw;
+      font-size: 4vh;
     }
     .stage {
       width: 80vw;
@@ -376,10 +376,10 @@ a:hover{
       height: 50%;
     }
     .tagLine h1{
-      font-size: 13vw !important;
+      font-size: 6vh !important;
     }
     .tagLine_summit h1{
-  font-size: 4vw !important;
+  font-size: 4vh !important;
   font-weight: bold;
 }
 
@@ -399,7 +399,7 @@ a:hover{
       display: block;
     }
     #typed, .typing, .ti-cursor {
-      font-size: 4vw;
+      font-size: 3.5vh;
     }
     .stage {
       width: 80vw;
@@ -412,11 +412,11 @@ a:hover{
     }
 
     .tagLine h1{
-      font-size: 6vw !important;
+      font-size: 8vh !important;
     }
 
     .tagLine_summit h1{
-  font-size: 4vw !important;
+  font-size: 4vh !important;
   font-weight: bold;
 }
 
@@ -425,11 +425,11 @@ a:hover{
   /*// Medium devices (tablets, 768px and up)*/
 @media (min-width: 768px) and (max-width: 990px) { 
   .tagLine h1{
-       font-size: 10vw !important;
+       font-size: 10vh !important;
     }
 
         .tagLine_summit h1{
-  font-size: 3vw !important;
+  font-size: 3vh !important;
   font-weight: bold;
 }
 
