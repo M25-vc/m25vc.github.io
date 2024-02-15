@@ -87,7 +87,12 @@ canvas {
   padding-top: 10%;
 }
 .tagLine h1{
-      font-size: 9vw !important;
+      font-size: 8vw !important;
+  font-weight: bold;
+}
+
+.tagLine_summit h1{
+  font-size: 2vw !important;
   font-weight: bold;
 }
 .name_font{
@@ -370,9 +375,13 @@ a:hover{
       width: 50%;
       height: 50%;
     }
-    .tagLine h2{
-      font-size: 6vw !important;
+    .tagLine h1{
+      font-size: 5vw !important;
     }
+    .tagLine_summit h1{
+  font-size: 4vw !important;
+  font-weight: bold;
+}
 
   }
 
@@ -402,17 +411,28 @@ a:hover{
       /*height: 100vw*/
     }
 
-    .tagLine h2{
+    .tagLine h1{
       font-size: 6vw !important;
     }
+
+    .tagLine_summit h1{
+  font-size: 4vw !important;
+  font-weight: bold;
+}
 
   }
 
   /*// Medium devices (tablets, 768px and up)*/
 @media (min-width: 768px) and (max-width: 990px) { 
-  .tagLine {
+  .tagLine h1{
        font-size: 10vw !important;
     }
+
+        .tagLine_summit h1{
+  font-size: 3vw !important;
+  font-weight: bold;
+}
+
   .map_container iframe{
     width: 100%;
     height: 300px;
