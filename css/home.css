@@ -87,7 +87,7 @@ canvas {
   padding-top: 10%;
 }
 .tagLine h1{
-      font-size: 8vw !important;
+  font-size: 8vw !important;
   font-weight: bold;
 }
 
@@ -376,7 +376,7 @@ a:hover{
       height: 50%;
     }
     .tagLine h1{
-      font-size: 5vw !important;
+      font-size: 13vw !important;
     }
     .tagLine_summit h1{
   font-size: 4vw !important;
