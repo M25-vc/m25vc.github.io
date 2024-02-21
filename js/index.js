@@ -89,21 +89,21 @@ function getTeamDetails(team) {
   team_medium = ""
 
   if (team.twitter){
-    team_twitter = `<span class="fa-stack fa-lg">
-                      <i class="fa fa-circle fa-stack-2x icon-twitter"></i>
-                      <a href="${team.twitter}" target="_blank"><i class="fa fa-twitter fa-stack-1x fa-inverse"></i></a>
+    team_twitter = `<span class="fa-stack fa-lg social_icon_home">
+                      <i class="fa fa-circle fa-stack-2x"></i>
+                      <a href="${team.twitter}" target="_blank"><i class="fa-brands fa-x-twitter fa-stack-1x fa-inverse"></i></a>
                     </span>`
   }
   if(team.linkedin){
-    team_linkedin = `<span class="fa-stack fa-lg">
-                      <i class="fa fa-circle fa-stack-2x icon-linkedin"></i>
-                      <a href="${team.linkedin}" target="_blank"><i class="fa fa-linkedin fa-stack-1x fa-inverse"></i></a>
+    team_linkedin = `<span class="fa-stack fa-lg social_icon_home">
+                      <i class="fa fa-circle fa-stack-2x"></i>
+                      <a href="${team.linkedin}" target="_blank"><i class="fa-brands fa-linkedin-in fa-stack-1x fa-inverse"></i></a>
                     </span>`
   }
   if(team.medium){
-    team_medium = `<span class="fa-stack fa-lg">
-                      <i class="fa fa-circle fa-stack-2x icon-medium"></i>
-                      <a href="${team.medium}" target="_blank"><i class="fa fa-medium fa-stack-1x fa-inverse"></i></a>
+    team_medium = `<span class="fa-stack fa-lg social_icon_home">
+                      <i class="fa fa-circle fa-stack-2x"></i>
+                      <a href="${team.medium}" target="_blank"><i class="fa-brands fa-medium fa-stack-1x fa-inverse"></i></a>
                     </span>`
   }
 
