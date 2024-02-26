@@ -309,7 +309,7 @@
                 <li class="nav-item funds funds-nav"><a href="portfolio#funds" class="nav-link" data-toggle="tab" >Funds</a></li>
               </ul>
               <div class="tab-content text-center">
-                
+
                 <div class="tab-pane fade show" id="tech">
                   <div class="option-combo tech" id="tech" role="tabpanel">
                     <div class="filter option-set" data-filter-group="funds">
@@ -646,6 +646,28 @@
               }
             }
           });
+      // tech
+          $('a.tech:not(.clone)').each(function() {
+            var $this = $(this);
+            var getVal = $this.attr('data-filter-value');
+            var numItems = $('img'+getVal+':not(.isotope-hidden)').length;
+            if(!$(this).hasClass('active') && !$that.hasClass('tech') ){
+              if(numItems == 0){
+                $this.addClass('disabled');
+              }
+              else {
+                $this.removeClass('disabled');
+              }
+            }
+            else if( $this.hasClass('active') && $this.hasClass('disabled') ){
+              $this.removeClass('disabled');
+            }
+            else if(!$(this).hasClass('active') ) {
+              if(numItems > 0){
+                $this.removeClass('disabled');
+              }
+            }
+          });
       // update filter display
           var arrLbl = [];
           arrLbl = comboFilter.split('.');
@@ -666,39 +688,52 @@
           if ( comboFilter.indexOf('state') == -1 
             && comboFilter.indexOf('business') == -1 
             && comboFilter.indexOf('industry') == -1 
+            && comboFilter.indexOf('tech') == -1 
             && comboFilter.indexOf('status') == -1 
             && comboFilter.indexOf('funds') > 0 ){
             $('a.funds:not(.clone)').removeClass('disabled');
-        }
-        if ( comboFilter.indexOf('funds') == -1 
-          && comboFilter.indexOf('business') == -1 
-          && comboFilter.indexOf('industry') == -1 
-          && comboFilter.indexOf('status') == -1 
-          && comboFilter.indexOf('state') > 0 ){
-          $('a.state:not(.clone)').removeClass('disabled');
-      }
-      if ( comboFilter.indexOf('funds') == -1 
-        && comboFilter.indexOf('state') == -1 
-        && comboFilter.indexOf('industry') == -1 
-        && comboFilter.indexOf('status') == -1 
-        && comboFilter.indexOf('business') > 0 ){
-        $('a.business:not(.clone)').removeClass('disabled');
-    }
-    if ( comboFilter.indexOf('funds') == -1 
-      && comboFilter.indexOf('state') == -1 
-      && comboFilter.indexOf('business') == -1 
-      && comboFilter.indexOf('status') == -1 
-      && comboFilter.indexOf('industry') > 0 ){
-      $('a.industry:not(.clone)').removeClass('disabled');
-  }
-  if ( comboFilter.indexOf('funds') == -1 
-    && comboFilter.indexOf('state') == -1 
-    && comboFilter.indexOf('business') == -1 
-    && comboFilter.indexOf('industry') == -1 
-    && comboFilter.indexOf('status') > 0 ){
-    $('a.status:not(.clone)').removeClass('disabled');
-}
-      // filter display count
+          }
+          if ( comboFilter.indexOf('funds') == -1 
+            && comboFilter.indexOf('business') == -1 
+            && comboFilter.indexOf('industry') == -1 
+            && comboFilter.indexOf('tech') == -1 
+            && comboFilter.indexOf('status') == -1 
+            && comboFilter.indexOf('state') > 0 ){
+            $('a.state:not(.clone)').removeClass('disabled');
+          }
+          if ( comboFilter.indexOf('funds') == -1 
+            && comboFilter.indexOf('state') == -1 
+            && comboFilter.indexOf('industry') == -1 
+            && comboFilter.indexOf('tech') == -1 
+            && comboFilter.indexOf('status') == -1 
+            && comboFilter.indexOf('business') > 0 ){
+            $('a.business:not(.clone)').removeClass('disabled');
+          }
+          if ( comboFilter.indexOf('funds') == -1 
+            && comboFilter.indexOf('state') == -1 
+            && comboFilter.indexOf('business') == -1 
+            && comboFilter.indexOf('status') == -1 
+            && comboFilter.indexOf('tech') == -1
+            && comboFilter.indexOf('industry') > 0 ){
+            $('a.industry:not(.clone)').removeClass('disabled');
+          }
+          if ( comboFilter.indexOf('funds') == -1 
+            && comboFilter.indexOf('state') == -1 
+            && comboFilter.indexOf('business') == -1 
+            && comboFilter.indexOf('industry') == -1 
+            && comboFilter.indexOf('tech') == -1
+            && comboFilter.indexOf('status') > 0 ){
+            $('a.status:not(.clone)').removeClass('disabled');
+          }
+          if ( comboFilter.indexOf('funds') == -1 
+            && comboFilter.indexOf('state') == -1 
+            && comboFilter.indexOf('business') == -1 
+            && comboFilter.indexOf('industry') == -1 
+            && comboFilter.indexOf('status') == -1
+            && comboFilter.indexOf('tech') > 0 ){
+            $('a.tech:not(.clone)').removeClass('disabled');
+          }
+        // filter display count
 var numItemsHidden = $('img.item.isotope-hidden').length;
 var numItemsDisp = $('img.item:not(.isotope-hidden)').length;
 var numItemsVisible = $('img.item:not(.isotope-hidden)').length;
