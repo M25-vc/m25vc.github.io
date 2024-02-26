@@ -302,12 +302,33 @@
             <div id="options">
               <ul class="nav nav-tabs nav-justified" id="myTab" role="tablist">
                 <li class="nav-item active industry industry-nav"><a href="portfolio#industry" class="nav-link" data-toggle="tab">Industry</a></li>
+                <li class="nav-item tech tech-nav"><a href="portfolio#tech" class="nav-link" data-toggle="tab">Tech</a></li>
                 <li class="nav-item status status-nav"><a href="portfolio#status" class="nav-link" data-toggle="tab" >Status</a></li>
                 <li class="nav-item business business-nav"><a href="portfolio#business" class="nav-link" data-toggle="tab">Business</a></li>
                 <li class="nav-item state state-nav"><a href="portfolio#state" class="nav-link" data-toggle="tab">States</a></li>
                 <li class="nav-item funds funds-nav"><a href="portfolio#funds" class="nav-link" data-toggle="tab" >Funds</a></li>
               </ul>
               <div class="tab-content text-center">
+                
+                <div class="tab-pane fade show" id="tech">
+                  <div class="option-combo tech" id="tech" role="tabpanel">
+                    <div class="filter option-set" data-filter-group="funds">
+
+                      <a class='tech tech_ai' id='tech_ai' data-filter-value='.tech_ai'><label class='tech' for='tech_ai'>AI</label></a> |
+                      <a class='tech tech_ecommerce' id='tech_ecommerce' data-filter-value='.tech_ecommerce'><label class='tech' for='tech_ecommerce'>Ecommerce</label></a> |
+                      <a class='tech tech_fintech' id='tech_fintech' data-filter-value='.tech_fintech'><label class='tech' for='tech_fintech'>Fintech</label></a> |
+                      <a class='tech tech_hardware' id='tech_hardware' data-filter-value='.tech_hardware'><label class='tech' for='tech_hardware'>Hardware</label></a> |
+                      <a class='tech tech_marketplace' id='tech_marketplace' data-filter-value='.tech_marketplace'><label class='tech' for='tech_marketplace'>Marketplace</label></a> |
+                      <a class='tech tech_vsaas' id='tech_vsaas' data-filter-value='.tech_vsaas'><label class='tech' for='tech_vsaas'>Vertical SaaS</label></a> |
+                      <a class='tech tech_hsaas' id='tech_hsaas' data-filter-value='.tech_hsaas'><label class='tech' for='tech_hsaas'>Horizontal SaaS</label></a> |
+                      <a class='tech tech_csaas' id='tech_csaas' data-filter-value='.tech_csaas'><label class='tech' for='tech_csaas'>Consumer SaaS</label></a> |
+
+                      <a class='tech tech_other' id='tech_other' data-filter-value='.tech_other'><label class='tech' for='tech_other'>Other</label></a> 
+                    </div>
+                  </div>
+                </div>
+
+
                 <div class="tab-pane fade show" id="funds">
                   <div class="option-combo funds" id="funds" role="tabpanel">
                     <div class="filter option-set" data-filter-group="funds">
@@ -345,7 +366,6 @@
                     <a class="status status_active" id="status_active" data-filter-value=".status_active"><label class="status" for="status_active">Active</label></a>
                     <a class="status status_ecit" id="status_exit" data-filter-value=".status_exit"><label class="status" for="status_exit">Exit</label></a>
                     <a class="status status_inactive" id="status_inactive" data-filter-value=".status_inactive"><label class="status" for="status_inactive">Inactive</label></a>
-
                   </div>
                 </div>
                 <div class="option-combo industry tab-pane active" id="industry">
