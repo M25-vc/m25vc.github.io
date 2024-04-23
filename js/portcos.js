@@ -138,3 +138,4 @@ var portfolio = [{url: "https://gocontinuum.ai/", class: "state_IL funds4 busine
 {url: "https://www.glidera.io/?ref=M25", class: "state_IL funds1 business_B2B industry_finance     status_exit" ,img: "Glidera-Kraken" ,alt: "Glidera - Glidera provides a currency exchange API for Bitcoin wallets."},
 {url: "https://mimirhq.com/?ref=M25", class: "state_IN funds1 business_B2B business_B2C industry_education industry_enterprise   status_exit" ,img: "Mimir-HackerRank" ,alt: "Mimir - Mimir is a SaaS platform for automatic computer science, engineering, science & math grading and plagiarism detection."},
 {url: "https://www.app-press.com/?ref=M25", class: "state_IN funds1 business_B2B industry_enterprise     status_exit" ,img: "App Press-Exit" ,alt: "App Press - App Press is a B2B SaaS platform that builds mobile apps code-free."}
+];
