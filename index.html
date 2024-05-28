@@ -294,68 +294,10 @@
               <h1 class="font-weight-bold sectionTitle">Contact</h1>
             </div>
             <div class="row justify-content-center pt-4">
-              <p>FOUNDERS: Please fill out the form below. Include as much detail as possible on your company, business plan, funding round ask, and other relevant information. Keep in mind, we do require there to be some form of market traction, as we do not invest in ideas or prototypes. We usually get back to you within 48 hours.</p>
+              <p>FOUNDERS: Please fill out the widget form (popup on the corner of the website). Include as much detail as possible on your company, business plan, funding round ask, and other relevant information. Keep in mind, we do require there to be some form of market traction, as we do not invest in ideas or prototypes. We usually get back to you within 48 hours.</p>
 
               <p>INVESTORS: We only work with accredited investors that know one of our <a href="home#team">team members</a>. Please reach out to one of them if you are interested in hearing more about our investment strategy/philosophy, portfolio companies, or future funds.</p>
             </div>
-
-            <div id="form_sub" class="alert alert-success" role="alert">
-              <strong>Thank you!</strong> Your message was sent successfully.
-            </div>
-
-            <script type="text/javascript">
-              var submitted=false;
-              function validateForm() {
-                var bizname = document.getElementById("contactFormbusinessname").value;
-                if (bizname) {
-                 return false;
-               }else{
-                 submitted=true;
-                 $("#contact_form_sub").hide();
-                 return true;
-               }
-             }
-
-           </script>
-           <form id="contact_form_sub" action="https://docs.google.com/forms/d/e/1FAIpQLSdawaJdlvLNggNlDn68A5QZcfk5U-obfC2WN3VI--pPx4CGng/formResponse" method="post" target="hidden_iframe" class="g-recaptcha" 
-           data-sitekey="6LeBAyopAAAAAIoObWB8VNc18P-IhA8YRRm0Ahdt" 
-           data-callback='onSubmit' 
-           data-action='submit'
-           onsubmit="return validateForm()">
-           <div class="form-row">
-             <div class="form-group">
-              <label class="ohnoformname" for="name"></label>
-              <input class="ohnoformname" autocomplete="off" autocapitalize="off" type="text"  id="contactFormbusinessname" name="name" placeholder="Your name here">
-            </div>
-
-            <div class="form-group col-md-6">
-              <label>Name*</label>
-              <input name="entry.2102735960" type="text" class="form-control" placeholder="Jane Doe" required />
-            </div>
-            <div class="form-group col-md-6">
-              <label>Email*</label>
-              <input name="entry.1781413360" type="email" class="form-control" placeholder="you@company.com" required />
-            </div>
-          </div>
-          <div class="form-group">
-            <label>Subject</label>
-            <input name="entry.986364660" type="text" class="form-control" placeholder=""/>
-          </div>
-          <div class="form-group">
-            <label>Your Message</label>
-            <textarea name="entry.2126718973" class="form-control" rows="3" placeholder=""/></textarea>
-          </div>
-
-          
-          
-          <!-- <div class="g-recaptcha" data-sitekey="6Lc5mYUUAAAAAIpmaAwPXA3L6oq6zzIog89wM5zH"></div> -->
-
-
-          <button id="submit_btn" type="submit" class="btn btn-m25">Submit</button>
-          <p>* required</p>
-        </form>
-
-        <iframe name="hidden_iframe" id="hidden_iframe" style="display:none;" onload="if(submitted)  {$('#form_sub').show();$('#submit_btn').hide();}"></iframe>
 
       </div>
     </section>
