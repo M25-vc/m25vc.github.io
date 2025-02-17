@@ -159,18 +159,18 @@
     /* End: Recommended Isotope styles */
     a.funds:hover, label.funds:hover, 
     a.state:hover, label.state:hover, 
-    a.industry:hover, label.industry:hover, 
+    a.thesis:hover, label.thesis:hover, 
     a.business:hover, label.business:hover,
     a.status:hover, label.status:hover{
       cursor: hand !important; cursor: pointer !important;
     }
 
 
-    a.funds, a.state, a.industry, a.business, a.status, a.clone {
+    a.funds, a.state, a.thesis, a.business, a.status, a.clone {
       padding: 5px; 
     }
     label.funds, label.state, label.business, 
-    label.industry, label.statu{
+    label.thesis, label.statu{
       /*     margin-top: 5px; 
       margin-bottom: 5px;*/
     }
@@ -236,7 +236,7 @@
     }
     @media (max-width: 767px){
 
-      label.funds, label.state, label.business, label.industry, label.status, .option-set a, #filters #filter-display, #filter-counter,.filter-btn {
+      label.funds, label.state, label.business, label.thesis, label.status, .option-set a, #filters #filter-display, #filter-counter,.filter-btn {
         font-size: .75rem;
       }
       #myTab a{
@@ -302,7 +302,7 @@
           <div id="options-wrap">
             <div id="options">
               <ul class="nav nav-tabs nav-justified" id="myTab" role="tablist">
-                <li class="nav-item active industry industry-nav"><a href="portfolio#industry" class="nav-link" data-toggle="tab">Industry</a></li>
+                <li class="nav-item active thesis thesis-nav"><a href="portfolio#thesis" class="nav-link" data-toggle="tab">Thesis</a></li>
                 <li class="nav-item business business-nav"><a href="portfolio#business" class="nav-link" data-toggle="tab">Business</a></li>
                 <li class="nav-item state state-nav"><a href="portfolio#state" class="nav-link" data-toggle="tab">States</a></li>
                 <li class="nav-item funds funds-nav"><a href="portfolio#funds" class="nav-link" data-toggle="tab" >Funds</a></li>
@@ -353,26 +353,13 @@
                     <a class="status status_inactive" id="status_inactive" data-filter-value=".status_inactive"><label class="status" for="status_inactive">Inactive</label></a>
                   </div>
                 </div>
-                <div class="option-combo industry tab-pane active" id="industry">
-                  <div class="filter option-set" data-filter-group="industry">
-                    <a class='industry industry_agriculture' id='industry_agriculture' data-filter-value='.industry_agriculture'><label class='industry' for='industry_agriculture'>Agriculture</label></a>|
-                    <a class='industry industry_automotive' id='industry_automotive' data-filter-value='.industry_automotive'><label class='industry' for='industry_automotive'>Automotive</label></a>|
-                    <a class='industry industry_business' id='industry_business' data-filter-value='.industry_business'><label class='industry' for='industry_business'>Business Software</label></a>|
-                    <a class='industry industry_apps' id='industry_apps' data-filter-value='.industry_apps'><label class='industry' for='industry_apps'>Consumer Apps</label></a>|
-                    <a class='industry industry_cybersecurity' id='industry_cybersecurity' data-filter-value='.industry_cybersecurity'><label class='industry' for='industry_cybersecurity'>Cybersecurity</label></a>|
-                    <a class='industry industry_dev_software' id='industry_dev_software' data-filter-value='.industry_dev_software'><label class='industry' for='industry_dev_software'>DevTools / Software Infrastructure</label></a>|
-                    <a class='industry industry_education' id='industry_education' data-filter-value='.industry_education'><label class='industry' for='industry_education'>Education</label></a>|
-                    <a class='industry industry_entertainment' id='industry_entertainment' data-filter-value='.industry_entertainment'><label class='industry' for='industry_entertainment'>Entertainment, Media & Sports</label></a>|
-                    <a class='industry industry_fashion' id='industry_fashion' data-filter-value='.industry_fashion'><label class='industry' for='industry_fashion'>Fashion & Beauty</label></a>|
-                    <a class='industry industry_finance_insurance' id='industry_finance_insurance' data-filter-value='.industry_finance_insurance'><label class='industry' for='industry_finance_insurance'>Finance & Insurance</label></a>|
-                    <a class='industry industry_food' id='industry_food' data-filter-value='.industry_food'><label class='industry' for='industry_food'>Food & Retail</label></a>|
-                    <a class='industry industry_gov_law' id='industry_gov_law' data-filter-value='.industry_gov_law'><label class='industry' for='industry_gov_law'>Government / Law</label></a>|
-                    <a class='industry industry_healthcare' id='industry_healthcare' data-filter-value='.industry_healthcare'><label class='industry' for='industry_healthcare'>Healthcare</label></a>|
-                    <a class='industry industry_hr' id='industry_hr' data-filter-value='.industry_hr'><label class='industry' for='industry_hr'>Human Resources</label></a>|
-                    <a class='industry industry_manufacturing' id='industry_manufacturing' data-filter-value='.industry_manufacturing'><label class='industry' for='industry_manufacturing'>Industrial & Manufacturing</label></a>|
-                    <a class='industry industry_realestate' id='industry_realestate' data-filter-value='.industry_realestate'><label class='industry' for='industry_realestate'>Real Estate</label></a>|
-                    <a class='industry industry_sales_marketing' id='industry_sales_marketing' data-filter-value='.industry_sales_marketing'><label class='industry' for='industry_sales_marketing'>Sales & Marketing</label></a>|
-                    <a class='industry industry_supplychain' id='industry_supplychain' data-filter-value='.industry_supplychain'><label class='industry' for='industry_supplychain'>Supply Chain</label></a>
+                <div class="option-combo thesis tab-pane active" id="thesis">
+                  <div class="filter option-set" data-filter-group="thesis">
+                    <a class='thesis thesis_finance_insurance' id='thesis_finance_insurance' data-filter-value='.thesis_finance_insurance'><label class='thesis' for='thesis_finance_insurance'>Finance & Insurance</label></a>|
+                    <a class='thesis thesis_healthcare' id='thesis_healthcare' data-filter-value='.thesis_healthcare'><label class='thesis' for='thesis_healthcare'>Healthcare</label></a>|
+                    <a class='thesis thesis_horizontal_saas' id='thesis_horizontal_saas' data-filter-value='.thesis_horizontal_saas'><label class='thesis' for='thesis_horizontal_saas'>Horizontal SaaS</label></a>|
+                    <a class='thesis thesis_other' id='thesis_other' data-filter-value='.thesis_other'><label class='thesis' for='thesis_other'>Other</label></a>|
+                    <a class='thesis thesis_supply_chain_industrials' id='thesis_supply_chain_industrials' data-filter-value='.thesis_supply_chain_industrials'><label class='thesis' for='thesis_supply_chain_industrials'>Supply Chain & Industrials</label></a>
                   </div>
                 </div>
               </div>
@@ -609,34 +596,12 @@
               }
             }
           });
-      // industry
-          $('a.industry:not(.clone)').each(function() {
+      // thesis
+          $('a.thesis:not(.clone)').each(function() {
             var $this = $(this);
             var getVal = $this.attr('data-filter-value');
             var numItems = $('img'+getVal+':not(.isotope-hidden)').length;
-            if(!$(this).hasClass('active') && !$that.hasClass('industry') ){
-              if(numItems == 0){
-                $this.addClass('disabled');
-              }
-              else {
-                $this.removeClass('disabled');
-              }
-            }
-            else if( $this.hasClass('active') && $this.hasClass('disabled') ){
-              $this.removeClass('disabled');
-            }
-            else if(!$(this).hasClass('active') ) {
-              if(numItems > 0){
-                $this.removeClass('disabled');
-              }
-            }
-          });
-      // tech
-          $('a.tech:not(.clone)').each(function() {
-            var $this = $(this);
-            var getVal = $this.attr('data-filter-value');
-            var numItems = $('img'+getVal+':not(.isotope-hidden)').length;
-            if(!$(this).hasClass('active') && !$that.hasClass('tech') ){
+            if(!$(this).hasClass('active') && !$that.hasClass('thesis') ){
               if(numItems == 0){
                 $this.addClass('disabled');
               }
@@ -672,21 +637,21 @@
           });
           if ( comboFilter.indexOf('state') == -1 
             && comboFilter.indexOf('business') == -1 
-            && comboFilter.indexOf('industry') == -1 
+            && comboFilter.indexOf('thesis') == -1 
             && comboFilter.indexOf('status') == -1 
             && comboFilter.indexOf('funds') > 0 ){
             $('a.funds:not(.clone)').removeClass('disabled');
           }
           if ( comboFilter.indexOf('funds') == -1 
             && comboFilter.indexOf('business') == -1 
-            && comboFilter.indexOf('industry') == -1 
+            && comboFilter.indexOf('thesis') == -1 
             && comboFilter.indexOf('status') == -1 
             && comboFilter.indexOf('state') > 0 ){
             $('a.state:not(.clone)').removeClass('disabled');
           }
           if ( comboFilter.indexOf('funds') == -1 
             && comboFilter.indexOf('state') == -1 
-            && comboFilter.indexOf('industry') == -1 
+            && comboFilter.indexOf('thesis') == -1 
             && comboFilter.indexOf('status') == -1 
             && comboFilter.indexOf('business') > 0 ){
             $('a.business:not(.clone)').removeClass('disabled');
@@ -695,13 +660,13 @@
             && comboFilter.indexOf('state') == -1 
             && comboFilter.indexOf('business') == -1 
             && comboFilter.indexOf('status') == -1 
-            && comboFilter.indexOf('industry') > 0 ){
-            $('a.industry:not(.clone)').removeClass('disabled');
+            && comboFilter.indexOf('thesis') > 0 ){
+            $('a.thesis:not(.clone)').removeClass('disabled');
           }
           if ( comboFilter.indexOf('funds') == -1 
             && comboFilter.indexOf('state') == -1 
             && comboFilter.indexOf('business') == -1 
-            && comboFilter.indexOf('industry') == -1 
+            && comboFilter.indexOf('thesis') == -1 
             && comboFilter.indexOf('status') > 0 ){
             $('a.status:not(.clone)').removeClass('disabled');          
           }
